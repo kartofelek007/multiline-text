@@ -41,7 +41,6 @@ class MultilineText {
             element.innerHTML = "";
 
             for(let arr of Object.values(row)) {
-                console.log(arr);
                 const rowEl = document.createElement("div");
                 rowEl.classList.add("lines-text__row")
                 arr.forEach((el, i) => {
