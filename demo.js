@@ -10,7 +10,7 @@ const getLoremPart = (wordsCount) => {
 const randomArrIndex = (arr) => Math.floor(Math.random() * arr.length);
 
 //generate some test elements
-for (let i=0; i<50; i++) {
+for (let i=0; i<20; i++) {
     const tags = ["h1", "h2", "h3", "h4"];
     const el = document.createElement(tags[randomArrIndex(tags)]);
     el.innerText = getLoremPart();
@@ -18,12 +18,10 @@ for (let i=0; i<50; i++) {
     document.querySelector(".container").append(el);
 }
 
-// const elements = document.querySelectorAll("h1, h2, h3, h4");
-// elements.forEach(el => lines.addElement(el));
-
 //add dynamic title with different class
 const button = document.querySelector("#addH");
 button.onclick = function() {
+    button.disabled = true;
     const elements = document.querySelectorAll("h1, h2, h3, h4");
     elements.forEach((el, i) => {
         if (el.parentElement.classList.contains("container")) {
