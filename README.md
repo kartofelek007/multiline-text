@@ -1,3 +1,5 @@
+![](./readme-data/screen.png)
+
 # Experiment with multiline background
 Mini script for transform text to multiline-text with separate rows and background.
 
@@ -17,7 +19,7 @@ lines.addElement(mySuperHeader);
 3. Add style for this element. If you want add padding to left and right sides, use `--padding-l` and `--padding-r` variables:
 
 ```css
-/* styled element before change */
+/* element before change */
 .title {
     font-size: 20px;
     font-weight: bold;
@@ -28,47 +30,45 @@ lines.addElement(mySuperHeader);
     padding-right: 13px;
 }
 
-/* styled element after change to multi line element */
-/* ideally padding after convert should be the same as above */
+/* element after change to multi line element */
+/* if you want change padding-left and padding-right, you must use this variables */
 .title[data-text-lines] {
-    --padding-l: 13px;
-    --padding-r: 13px;
+    --padding-l: 13px; /* default is 1rem */
+    --padding-r: 13px; /* default is 1rem */
 }
 
 /* single row */
-.title[data-text-lines] .line-text__row {
-    background: red;
-    color: white;
-    /*
-    if you want style padding-left and padding-right for single row
-    change only padding-top padding-bottom or use variables
-    */
-    padding-top: 20px;
-    padding-bottom: 20px;
-    /* or */
-    padding: 20px var(--padding-r);
-    margin-bottom: 5px;
-}
+.title[data-text-lines] .line-text__row {}
 
 /* single word */
 .title[data-text-lines] .line-text__word {}
 ```
 
-If you want change padding for single row:
+If you want change padding for single row you should use `--padding-l` and `--padding-r` variables:
 
 ```css
+.title[data-text-lines] {
+    --padding-l : 15px;
+    --padding-r : 15px;
+}
 .title[data-text-lines] .line-text__row {
     margin-bottom: 5px;
     color: #fff;
     background: gold;
+    padding-top: 7px;
+    padding-bottom: 7px;
 
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /*
+    or user variables:
+    var(--padding-l) - left padding
+    var(--padding-r) - right padding
+    */
+    padding: 7px var(--padding-r);
     /* or */
-    padding: 20px var(--padding-r);
-    /* or */
-    padding: 20px var(--padding-r) 20px var(--padding-l);
+    padding: 7px var(--padding-r) 7px var(--padding-l);
 }
 ```
+
+In `multiline-test.css` you may see why this step is needed.
 
 Look at [demo.css](./demo.css) for more examples.
