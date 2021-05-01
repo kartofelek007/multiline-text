@@ -1,7 +1,7 @@
 # Experiment with multiline background
 Mini script for transform text to multiline-text with separate rows and background.
 
-demo:
+demo: https://kartofelek007.github.io/multiline-text/
 
 ### Usage
 1. Add line-text.js and line-text.css to your page.
