@@ -1,4 +1,4 @@
-class LinesText {
+class MultilineText {
     constructor() {
         this._elements = [];
         this._bindEvents();

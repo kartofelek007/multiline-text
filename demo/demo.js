@@ -1,4 +1,4 @@
-const lines = new LinesText;
+const lines = new MultilineText;
 
 const getLoremPart = (wordsCount) => {
     let lorem = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque incidunt consequuntur doloribus ab, ipsa nesciunt magnam odit fugit facilis accusamus laborum deleniti voluptatum nostrum maiores perspiciatis atque consectetur quis fuga.";
