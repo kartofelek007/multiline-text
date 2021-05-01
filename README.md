@@ -7,12 +7,12 @@ demo: https://kartofelek007.github.io/multiline-text/
 
 ### Usage
 1. Add `multiline-text.js` and `multiline-text.css` to your page.
-2. Create instance of lineText and add element to change:
+2. Create instance of MultilineText class and add element to change:
 ```js
-const mySuperHeader = document.querySelector("h2.title");
+const header = document.querySelector("h2.title");
 
 const lines = new MultilineText;
-lines.addElement(mySuperHeader);
+lines.addElement(header);
 ```
 
 
