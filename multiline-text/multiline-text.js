@@ -54,15 +54,16 @@ class MultilineText {
 
     _prepareHTML(element) {
         element.classList.add("line-text");
+        element.setAttribute("aria-label", element.textContent);
 
         if (element.dataset.textLines) {
             const span = element.querySelectorAll("span.line-text__word")
-            element.innerHTML = [...span].map(el => `<span class="line-text__word">${el.innerText}</span>`).join(" ");
+            element.innerHTML = [...span].map(el => `<span aria-hidden="true" class="line-text__word">${el.innerText}</span>`).join(" ");
         } else {
             element.innerHTML = element.textContent
                 .trim()
                 .split(" ")
-                .map(w => `<span class="line-text__word">${w}</span>`)
+                .map(w => `<span aria-hidden="true" class="line-text__word">${w}</span>`)
                 .join(" ");
             element.dataset.textLines = true;
         }
