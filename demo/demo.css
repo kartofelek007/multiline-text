@@ -321,19 +321,19 @@ h4 {
 }
 
 .test-case .element:nth-child(1) {
-    background-image: url(https://picjumbo.com/wp-content/uploads/abstract-night-city-traffic-bokeh-from-car-2210x1473.jpg);
+    background-image: url(https://pokaimg.me/740x250/landscape?id=1&notext);
     grid-area: area1;
 }
 .test-case .element:nth-child(2) {
-    background-image: url(https://picjumbo.com/wp-content/uploads/golden-gate-bridge-abstract-night-foggy-traffic-2210x1474.jpg);
+    background-image: url(https://pokaimg.me/740x250/landscape?id=2&notext);
     grid-area: area2;
 }
 .test-case .element:nth-child(3) {
-    background-image: url(https://picjumbo.com/wp-content/uploads/prague-streets-at-night-colorful-abstract-edit-2210x1474.jpg);
+    background-image: url(https://pokaimg.me/740x250/landscape?id=3&notext);
     grid-area: area3;
 }
 .test-case .element:nth-child(4) {
-    background-image: url(https://picjumbo.com/wp-content/uploads/abstract-night-city-traffic-bokeh-from-car-2210x1473.jpg);
+    background-image: url(https://pokaimg.me/740x250/landscape?id=4&notext);
     grid-area: area4;
 }
 
